@@ -96,6 +96,8 @@ public class GF {
 		while(true){
 			System.out.println("pierwsza liczba : " );
 	    	tempNumber = scanIn.nextLine();
+	    	if(tempNumber.length()>baza)
+	    		continue;
 	    	number1=stringToArr(tempNumber,baza);
 	    	if(number1!=null)
 	    		break;
@@ -103,7 +105,8 @@ public class GF {
 		while(true){
 			System.out.println("\n\n druga liczba : " );
 		    tempNumber = scanIn.nextLine();
-	    	tempNumber = scanIn.nextLine();
+		    if(tempNumber.length()>baza)
+	    		continue;
 	    	number2=stringToArr(tempNumber,baza);
 	    	if(number2!=null)
 	    		break;
@@ -117,6 +120,6 @@ public class GF {
 	    System.out.println("\nWYNIK MNOZENIA : ");
 	    display(mnozenie);
 	    System.out.println("\nWYNIK Dodawania : ");
-	    display(mnozenie);
+	    display(dodawanie);
 	}
 }
