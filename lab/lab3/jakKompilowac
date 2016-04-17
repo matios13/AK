@@ -1,0 +1,3 @@
+as --32 -o binary.o recurencion.asm
+ld -m elf_i386 -o binary binary.o
+
